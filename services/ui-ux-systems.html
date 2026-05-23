@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UI/UX Systems by Booklee Technologies — design systems, research, prototyping, and accessible interface design.">
+  <meta name="theme-color" content="#050816">
+  <title>UI/UX Systems | Booklee Technologies</title>
+  <link rel="icon" href="../assets/images/booklee-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div id="page-loader" class="page-loader" role="status" aria-label="Loading"><img src="../assets/images/booklee-logo.png" alt="" class="page-loader__logo-img" width="640" height="640" decoding="async"><div class="page-loader__bar"><div class="page-loader__progress"></div></div></div>
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+  <div id="mouse-gradient" class="mouse-gradient" aria-hidden="true"></div>
+  <div class="bg-canvas" aria-hidden="true"><div id="bg-particles" class="bg-particles"></div></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html" class="nav__logo" aria-label="Booklee Technologies home"><img src="../assets/images/booklee-logo.png" alt="Booklee Technologies" class="nav__logo-img" width="560" height="560" decoding="async"></a>
+        <ul class="nav__links" role="list">
+          <li><a href="../index.html" class="nav__link">Home</a></li>
+          <li><a href="../about.html" class="nav__link">About</a></li>
+          <li><a href="../services.html" class="nav__link">Services</a></li>
+          <li><a href="../contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions"><a href="../book-call.html" class="btn btn--primary btn--sm">Book a Call</a></div>
+        <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
+      </nav>
+    </div>
+  </header>
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="../index.html" class="mobile-menu__link">Home</a>
+    <a href="../about.html" class="mobile-menu__link">About</a>
+    <a href="../services.html" class="mobile-menu__link">Services</a>
+    <a href="../contact.html" class="mobile-menu__link">Contact</a>
+    <a href="../book-call.html" class="btn btn--primary">Book a Call</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a><span class="breadcrumb__sep">/</span>
+          <a href="../services.html">Services</a><span class="breadcrumb__sep">/</span>
+          <span aria-current="page">UI/UX Systems</span>
+        </nav>
+        <h1 class="page-hero__title reveal">UI/UX <span class="text-gradient">Systems</span></h1>
+        <p class="page-hero__desc reveal">Cohesive design systems and research-backed interfaces that accelerate your team and delight your users.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="content-block reveal">
+          <h2>What we deliver</h2>
+          <p>We bridge design and engineering with scalable UI systems—tokens, components, patterns, and documentation that keep experiences consistent across web, mobile, and marketing surfaces. Our UX researchers validate assumptions before pixels become production code.</p>
+        </div>
+
+        <div class="content-block reveal">
+          <h2>Technologies we use</h2>
+          <div class="flex flex-wrap gap-md">
+            <span class="tech-pill">Figma</span>
+            <span class="tech-pill">Storybook</span>
+            <span class="tech-pill">Radix UI</span>
+            <span class="tech-pill">Tailwind</span>
+            <span class="tech-pill">Maze / UserTesting</span>
+            <span class="tech-pill">WCAG 2.2</span>
+          </div>
+        </div>
+
+        <div class="content-block reveal">
+          <h2>Workflow</h2>
+          <ol class="content-block" style="list-style: decimal; padding-left: 1.5rem;">
+            <li><strong>Research & discovery</strong> — Interviews, journey maps, and competitive analysis.</li>
+            <li><strong>System definition</strong> — Tokens, typography, color, and component specs.</li>
+            <li><strong>Prototype & test</strong> — Interactive prototypes with usability sessions.</li>
+            <li><strong>Handoff & adoption</strong> — Developer documentation and team workshops.</li>
+          </ol>
+        </div>
+
+        <div class="content-block reveal">
+          <h2>Deliverables</h2>
+          <ul>
+            <li>Figma design system library</li>
+            <li>Component documentation</li>
+            <li>UX research reports</li>
+            <li>Accessibility audit & remediation plan</li>
+            <li>Interaction specifications for engineering</li>
+          </ul>
+        </div>
+
+        <div class="content-block reveal" id="faq">
+          <h2>Frequently asked questions</h2>
+          <div class="faq-item">
+            <button class="faq-item__button" type="button" aria-expanded="false">Can you work with our existing brand guidelines?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-item__answer"><div class="faq-item__answer-inner">Yes. We extend existing brands into systematic UI libraries rather than replacing them—unless a refresh is part of scope.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__button" type="button" aria-expanded="false">Do you design mobile apps too?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-item__answer"><div class="faq-item__answer-inner">Our systems are platform-agnostic. We deliver iOS, Android, and web patterns from a unified token foundation.</div></div>
+          </div>
+        </div>
+
+        <div class="content-block reveal" id="all-services">
+          <h2>All services</h2>
+          <p class="text-muted mb-lg">Each service has a dedicated page with workflows, deliverables, and FAQs.</p>
+          <ul class="services-index" role="list">
+            <li><a href="product-engineering.html" class="services-index__link">Product Engineering</a></li>
+            <li><a href="system-architecture.html" class="services-index__link">System Architecture</a></li>
+            <li><a href="web-engineering.html" class="services-index__link">Web Engineering</a></li>
+            <li><a href="ui-ux-systems.html" class="services-index__link is-current" aria-current="page">UI/UX Systems</a></li>
+            <li><a href="digital-growth-strategy.html" class="services-index__link">Digital Growth Strategy</a></li>
+            <li><a href="product-strategy-consulting.html" class="services-index__link">Product Strategy & Consulting</a></li>
+          </ul>
+        </div>
+
+        <div class="cta-banner reveal mt-2xl">
+          <h2 class="cta-banner__title">Unify your product experience</h2>
+          <p class="cta-banner__text">Book a call to explore design system and UX research engagements.</p>
+          <a href="../book-call.html" class="btn btn--primary btn--lg">Book a Call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <a href="product-engineering.html" class="footer__link">Product Engineering</a>
+          <a href="system-architecture.html" class="footer__link">System Architecture</a>
+          <a href="web-engineering.html" class="footer__link">Web Engineering</a>
+          <a href="ui-ux-systems.html" class="footer__link">UI/UX Systems</a>
+          <a href="digital-growth-strategy.html" class="footer__link">Digital Growth Strategy</a>
+          <a href="product-strategy-consulting.html" class="footer__link">Product Strategy & Consulting</a>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <a href="../index.html" class="footer__link">Home</a>
+          <a href="../about.html" class="footer__link">About</a>
+          <a href="../services.html" class="footer__link">All services</a>
+          <a href="../contact.html" class="footer__link">Contact</a>
+          <a href="../book-call.html" class="footer__link">Book a Call</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Booklee Technologies. All rights reserved.</p>
+        <p><a href="../services.html">Services overview</a></p>
+      </div>
+    </div>
+    <div class="footer__signature" id="footer-signature">
+      <div class="footer__signature-glow" id="footer-booklee-glow" aria-hidden="true"></div>
+      <div class="footer__signature-glass" aria-hidden="true"></div>
+      <span class="footer__booklee reveal-stagger" role="img" aria-label="Booklee">
+        <span class="footer__booklee-char" tabindex="0">B</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">k</span>
+        <span class="footer__booklee-char" tabindex="0">l</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="../assets/js/scripts.js" defer></script>
+</body>
+</html>
