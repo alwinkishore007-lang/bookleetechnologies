@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a discovery call with Booklee Technologies — schedule a 30-minute session to discuss your product goals and timeline.">
+  <meta name="theme-color" content="#050816">
+  <title>Book a Call | Booklee Technologies</title>
+  <link rel="icon" href="assets/images/booklee-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="page-loader" class="page-loader" role="status" aria-label="Loading"><img src="assets/images/booklee-logo.png" alt="" class="page-loader__logo-img" width="640" height="640" decoding="async"><div class="page-loader__bar"><div class="page-loader__progress"></div></div></div>
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+  <div id="mouse-gradient" class="mouse-gradient" aria-hidden="true"></div>
+  <div class="bg-canvas" aria-hidden="true"><div id="bg-particles" class="bg-particles"></div></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__logo" aria-label="Booklee Technologies home"><img src="assets/images/booklee-logo.png" alt="Booklee Technologies" class="nav__logo-img" width="560" height="560" decoding="async"></a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions"><a href="book-call.html" class="btn btn--primary btn--sm">Book a Call</a></div>
+        <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
+      </nav>
+    </div>
+  </header>
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="services.html" class="mobile-menu__link">Services</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="book-call.html" class="btn btn--primary">Book a Call</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">/</span><span aria-current="page">Book a Call</span></nav>
+        <h1 class="page-hero__title reveal">Schedule your <span class="text-gradient">discovery call</span></h1>
+        <p class="page-hero__desc reveal">A focused 30-minute session to understand your product, constraints, and how Booklee can help you ship with confidence.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3 reveal-stagger mb-2xl">
+          <article class="glass-card"><h3 class="glass-card__title">Clarity on next steps</h3><p class="glass-card__text">Leave with a recommended approach—whether that's a discovery sprint, architecture review, or full build engagement.</p></article>
+          <article class="glass-card"><h3 class="glass-card__title">No-pressure conversation</h3><p class="glass-card__text">We listen first. You'll get honest feedback on feasibility, timeline, and team fit—not a hard sales pitch.</p></article>
+          <article class="glass-card"><h3 class="glass-card__title">Senior expertise</h3><p class="glass-card__text">Calls are led by a principal engineer or product lead—not a junior scheduler reading a script.</p></article>
+        </div>
+
+        <div class="calendly-wrap reveal" id="calendly-container">
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/bookleetechnologies/30mins"
+            style="min-width:320px;height:700px;"
+            aria-label="Calendly scheduling widget — Booklee Technologies 30-minute call"
+          ></div>
+          <p class="calendly-wrap__fallback text-center text-muted">
+            Prefer a new tab?
+            <a href="https://calendly.com/bookleetechnologies/30mins" data-calendly-link target="_blank" rel="noopener noreferrer">Open Calendly scheduling</a>
+            ·
+            <a href="mailto:bookleetechnologies@gmail.com" data-site-email>bookleetechnologies@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="booking-confirm glass-card mt-2xl" id="booking-confirm" role="status">
+          <svg class="booking-confirm__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h2 class="section__title">You're all set!</h2>
+          <p class="text-muted">Check your email for calendar confirmation. We look forward to meeting you.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:none;padding-top:0">
+        <p>&copy; <span id="year"></span> Booklee Technologies.</p>
+        <p><a href="contact.html">Contact us</a> · <a href="mailto:bookleetechnologies@gmail.com" data-site-email>bookleetechnologies@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer__signature" id="footer-signature">
+      <div class="footer__signature-glow" id="footer-booklee-glow" aria-hidden="true"></div>
+      <div class="footer__signature-glass" aria-hidden="true"></div>
+      <span class="footer__booklee reveal-stagger" role="img" aria-label="Booklee">
+        <span class="footer__booklee-char" tabindex="0">B</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">k</span>
+        <span class="footer__booklee-char" tabindex="0">l</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>

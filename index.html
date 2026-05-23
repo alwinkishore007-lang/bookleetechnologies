@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Booklee Technologies engineers scalable digital products — product engineering, system architecture, web engineering, and growth strategy for ambitious teams.">
+  <meta name="keywords" content="product engineering, system architecture, web development, UI/UX, digital agency, Booklee Technologies">
+  <meta name="author" content="Booklee Technologies">
+  <meta property="og:title" content="Booklee Technologies | Engineering Digital Products That Scale">
+  <meta property="og:description" content="Premium product engineering and digital growth partner for teams building scalable experiences.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <title>Booklee Technologies | Engineering Digital Products That Scale</title>
+  <link rel="icon" href="assets/images/booklee-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/booklee-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="page-loader" class="page-loader" role="status" aria-live="polite" aria-label="Loading page">
+    <img src="assets/images/booklee-logo.png" alt="" class="page-loader__logo-img" width="640" height="640" decoding="async">
+    <div class="page-loader__bar"><div class="page-loader__progress"></div></div>
+  </div>
+
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Page scroll progress"></div>
+
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+  <div id="mouse-gradient" class="mouse-gradient" aria-hidden="true"></div>
+
+  <div class="bg-canvas" aria-hidden="true">
+    <div id="bg-particles" class="bg-particles"></div>
+  </div>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__logo" aria-label="Booklee Technologies home">
+          <img src="assets/images/booklee-logo.png" alt="Booklee Technologies" class="nav__logo-img" width="560" height="560" decoding="async">
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="book-call.html" class="btn btn--primary btn--sm">Book a Call</a>
+        </div>
+        <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="services.html" class="mobile-menu__link">Services</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="book-call.html" class="btn btn--primary">Book a Call</a>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__layout">
+        <div class="hero__content hero__parallax" data-parallax="0.15">
+          <div class="hero__badge reveal">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Product engineering partner for growth teams
+          </div>
+          <h1 id="hero-title" class="hero__title reveal">
+            Engineering Digital Products <span class="text-gradient">That Scale</span>
+          </h1>
+          <p class="hero__subtitle reveal">
+            Booklee Technologies partners with ambitious companies to design, build, and evolve digital products with engineering rigor, thoughtful UX, and strategies that compound over time.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="book-call.html" class="btn btn--primary btn--lg" data-cursor-hover>Book a Call</a>
+            <a href="services.html" class="btn btn--ghost btn--lg" data-cursor-hover>Explore Services</a>
+          </div>
+          <div class="hero__stats reveal" id="hero-stats">
+            <div>
+              <div class="hero__stat-value" data-count="120" data-suffix="+">0</div>
+              <div class="hero__stat-label">Products shipped</div>
+            </div>
+            <div>
+              <div class="hero__stat-value" data-count="98" data-suffix="%">0</div>
+              <div class="hero__stat-label">Client retention</div>
+            </div>
+            <div>
+              <div class="hero__stat-value" data-count="6" data-suffix="">0</div>
+              <div class="hero__stat-label">Core disciplines</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__snapshot reveal" aria-label="Engagement snapshot">
+          <div class="engagement-snapshot" id="engagement-snapshot">
+            <h2 class="engagement-snapshot__title">Engagement Snapshot</h2>
+            <div class="engagement-snapshot__grid">
+              <div class="snapshot-kpi snapshot-kpi--lavender">
+                <span class="snapshot-kpi__label">Avg First Response</span>
+                <span class="snapshot-kpi__value" data-count="2" data-suffix="h">0</span>
+              </div>
+              <div class="snapshot-kpi snapshot-kpi--blue">
+                <span class="snapshot-kpi__label">Support Coverage</span>
+                <span class="snapshot-kpi__value snapshot-kpi__value--static">24/7</span>
+              </div>
+              <div class="snapshot-kpi snapshot-kpi--mint">
+                <span class="snapshot-kpi__label">Countries Served</span>
+                <span class="snapshot-kpi__value" data-count="12" data-suffix="+">0</span>
+              </div>
+              <div class="snapshot-kpi snapshot-kpi--yellow">
+                <span class="snapshot-kpi__label">Client Satisfaction</span>
+                <span class="snapshot-kpi__value" data-count="98" data-suffix="%">0</span>
+              </div>
+            </div>
+            <div class="engagement-snapshot__notice">
+              <span class="engagement-snapshot__notice-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+              <p class="engagement-snapshot__notice-text">Priority technical response active for critical business issues.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services-preview" class="section services-section" aria-labelledby="services-preview-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">What we do</span>
+          <h2 id="services-preview-title" class="section__title">End-to-end capabilities for modern product teams</h2>
+          <p class="section__desc">From architecture to interface systems, we help you ship faster without sacrificing quality.</p>
+        </header>
+        <div class="services-assemble" id="services-assemble">
+          <article class="service-card service-card--from-left" data-service="product-engineering">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">01</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-card__title"><a href="services/product-engineering.html">Product Engineering</a></h3>
+            <p class="service-card__desc">Full-stack development with maintainable codebases, CI/CD, and observability built in from day one.</p>
+            <a href="services/product-engineering.html" class="service-card__cta">Explore Engineering</a>
+            <div class="service-card__footer"><span class="service-card__badge">Senior-led sprints</span> <a href="services/product-engineering.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article class="service-card service-card--from-top" data-service="system-architecture">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">02</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="service-card__title"><a href="services/system-architecture.html">System Architecture</a></h3>
+            <p class="service-card__desc">Resilient, cloud-native architectures designed for performance, security, and horizontal scale.</p>
+            <a href="services/system-architecture.html" class="service-card__cta">View Architecture</a>
+            <div class="service-card__footer"><span class="service-card__badge">Cloud-native focus</span> <a href="services/system-architecture.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article class="service-card service-card--from-right" data-service="web-engineering">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">03</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="service-card__title"><a href="services/web-engineering.html">Web Engineering</a></h3>
+            <p class="service-card__desc">High-performance web apps with accessibility, SEO, and conversion optimization at the core.</p>
+            <a href="services/web-engineering.html" class="service-card__cta">See Web Solutions</a>
+            <div class="service-card__footer"><span class="service-card__badge">Core Web Vitals ready</span> <a href="services/web-engineering.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article class="service-card service-card--from-bottom" data-service="ui-ux-systems">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">04</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+            </div>
+            <h3 class="service-card__title"><a href="services/ui-ux-systems.html">UI/UX Systems</a></h3>
+            <p class="service-card__desc">Design systems and interaction patterns that keep experiences consistent across every touchpoint.</p>
+            <a href="services/ui-ux-systems.html" class="service-card__cta">Browse Design Systems</a>
+            <div class="service-card__footer"><span class="service-card__badge">Figma-to-code handoff</span> <a href="services/ui-ux-systems.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article class="service-card service-card--from-left" data-service="digital-growth-strategy">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">05</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+            </div>
+            <h3 class="service-card__title"><a href="services/digital-growth-strategy.html">Digital Growth Strategy</a></h3>
+            <p class="service-card__desc">Data-informed funnels, experimentation, and analytics that tie product work to revenue.</p>
+            <a href="services/digital-growth-strategy.html" class="service-card__cta">Growth Programs</a>
+            <div class="service-card__footer"><span class="service-card__badge">Experiment-driven</span> <a href="services/digital-growth-strategy.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article class="service-card service-card--from-right" data-service="product-strategy-consulting">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">06</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="service-card__title"><a href="services/product-strategy-consulting.html">Product Strategy & Consulting</a></h3>
+            <p class="service-card__desc">Roadmaps, discovery workshops, and technical due diligence to de-risk your next big bet.</p>
+            <a href="services/product-strategy-consulting.html" class="service-card__cta">Strategy Workshops</a>
+            <div class="service-card__footer"><span class="service-card__badge">Executive advisory</span> <a href="services/product-strategy-consulting.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+        </div>
+        <p class="text-center mt-2xl reveal services-section__cta">
+          <a href="services.html" class="btn btn--primary">Explore all six services</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="process" class="section" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Our process</span>
+          <h2 id="process-title" class="section__title">A trusted framework for shipping with confidence</h2>
+          <p class="section__desc">We align engineering, design, and strategy early so every sprint moves the business forward—not sideways.</p>
+        </header>
+        <div class="grid grid--2 reveal-stagger">
+          <div class="glass-card process-step">
+            <span class="process-step__number" aria-hidden="true">01</span>
+            <div>
+              <h3 class="process-step__title">Discover & Align</h3>
+              <p class="process-step__text">We map goals, constraints, and success metrics through stakeholder workshops and technical audits.</p>
+            </div>
+          </div>
+          <div class="glass-card process-step">
+            <span class="process-step__number" aria-hidden="true">02</span>
+            <div>
+              <h3 class="process-step__title">Design & Architect</h3>
+              <p class="process-step__text">Information architecture, system diagrams, and UX flows validated before a single line of production code.</p>
+            </div>
+          </div>
+          <div class="glass-card process-step">
+            <span class="process-step__number" aria-hidden="true">03</span>
+            <div>
+              <h3 class="process-step__title">Build & Iterate</h3>
+              <p class="process-step__text">Agile delivery with transparent demos, automated testing, and performance budgets enforced every release.</p>
+            </div>
+          </div>
+          <div class="glass-card process-step">
+            <span class="process-step__number" aria-hidden="true">04</span>
+            <div>
+              <h3 class="process-step__title">Launch & Optimize</h3>
+              <p class="process-step__text">Post-launch monitoring, growth experiments, and continuous improvement backed by real user data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="section" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Why Booklee</span>
+          <h2 id="why-title" class="section__title">Built for teams who refuse to compromise on quality</h2>
+          <p class="section__desc">We embed as an extension of your product org—bringing senior engineering judgment, design craft, and commercial awareness to every engagement.</p>
+        </header>
+
+        <div class="why-us__flow" id="why-us-flow" aria-label="Why choose Booklee process flow">
+          <div class="why-us__spine" aria-hidden="true">
+            <span class="why-us__spine-track"></span>
+            <span class="why-us__spine-fill" id="why-us-spine-fill"></span>
+          </div>
+
+          <article class="why-us__step" data-flow-step="1">
+            <div class="why-us__step-inner">
+              <span class="why-us__step-badge" aria-hidden="true">01</span>
+              <div class="why-us__node">
+                <h3 class="why-us__node-title">Senior-led delivery</h3>
+                <p class="why-us__node-text">Every project is led by architects and leads with 10+ years of experience—not handed off to junior rotations.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="why-us__connector" data-flow-step="2" aria-hidden="true">
+            <div class="why-us__arrow">
+              <span class="why-us__arrow-line"><span class="why-us__arrow-line-fill"></span></span>
+              <span class="why-us__arrow-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M12 5v14M6 13l6 6 6-6"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <article class="why-us__step" data-flow-step="3">
+            <div class="why-us__step-inner">
+              <span class="why-us__step-badge" aria-hidden="true">02</span>
+              <div class="why-us__node">
+                <h3 class="why-us__node-title">Outcome-oriented partnerships</h3>
+                <p class="why-us__node-text">We measure success in shipped features, uptime, conversion lift, and time-to-market—not billable hours alone.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="why-us__connector" data-flow-step="4" aria-hidden="true">
+            <div class="why-us__arrow">
+              <span class="why-us__arrow-line"><span class="why-us__arrow-line-fill"></span></span>
+              <span class="why-us__arrow-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M12 5v14M6 13l6 6 6-6"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <article class="why-us__step" data-flow-step="5">
+            <div class="why-us__step-inner">
+              <span class="why-us__step-badge" aria-hidden="true">03</span>
+              <div class="why-us__node">
+                <h3 class="why-us__node-title">Transparent communication</h3>
+                <p class="why-us__node-text">Weekly demos, shared roadmaps, and direct Slack access keep stakeholders informed without status-meeting fatigue.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Client voices</span>
+          <h2 id="testimonials-title" class="section__title">Trusted by product leaders worldwide</h2>
+        </header>
+      </div>
+      <div class="marquee marquee--testimonials" aria-label="Scrolling client testimonials">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <blockquote class="glass-card testimonial">
+              <p class="testimonial__quote">"Booklee rebuilt our core platform in four months with zero downtime migration. Their architecture decisions still save us engineering hours every week."</p>
+              <footer class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">SK</div>
+                <div>
+                  <cite class="testimonial__name">Sarah Kim</cite>
+                  <p class="testimonial__role">CTO, Meridian Health Tech</p>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="glass-card testimonial">
+              <p class="testimonial__quote">"The design system they delivered unified three product lines. Our design-to-dev handoff time dropped by nearly 40%."</p>
+              <footer class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">JR</div>
+                <div>
+                  <cite class="testimonial__name">James Rivera</cite>
+                  <p class="testimonial__role">VP Product, Atlas Commerce</p>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="glass-card testimonial">
+              <p class="testimonial__quote">"From strategy workshop to launch, Booklee felt like an in-house team. They challenged our assumptions and shipped a product we're proud of."</p>
+              <footer class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">AL</div>
+                <div>
+                  <cite class="testimonial__name">Amara Liu</cite>
+                  <p class="testimonial__role">Founder, NovaLedger</p>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <blockquote class="glass-card testimonial">
+              <p class="testimonial__quote">"Booklee rebuilt our core platform in four months with zero downtime migration. Their architecture decisions still save us engineering hours every week."</p>
+              <footer class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">SK</div>
+                <div>
+                  <cite class="testimonial__name">Sarah Kim</cite>
+                  <p class="testimonial__role">CTO, Meridian Health Tech</p>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="glass-card testimonial">
+              <p class="testimonial__quote">"The design system they delivered unified three product lines. Our design-to-dev handoff time dropped by nearly 40%."</p>
+              <footer class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">JR</div>
+                <div>
+                  <cite class="testimonial__name">James Rivera</cite>
+                  <p class="testimonial__role">VP Product, Atlas Commerce</p>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="glass-card testimonial">
+              <p class="testimonial__quote">"From strategy workshop to launch, Booklee felt like an in-house team. They challenged our assumptions and shipped a product we're proud of."</p>
+              <footer class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">AL</div>
+                <div>
+                  <cite class="testimonial__name">Amara Liu</cite>
+                  <p class="testimonial__role">Founder, NovaLedger</p>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section" aria-labelledby="tech-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Technology</span>
+          <h2 id="tech-title" class="section__title">Modern stack, proven at scale</h2>
+          <p class="section__desc">We choose tools for longevity and team velocity—not hype cycles.</p>
+        </header>
+        <div class="marquee marquee--tech mt-xl" role="list" aria-label="Technologies we work with">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span class="tech-pill" role="listitem">React</span>
+              <span class="tech-pill" role="listitem">Next.js</span>
+              <span class="tech-pill" role="listitem">TypeScript</span>
+              <span class="tech-pill" role="listitem">Node.js</span>
+              <span class="tech-pill" role="listitem">Python</span>
+              <span class="tech-pill" role="listitem">PostgreSQL</span>
+              <span class="tech-pill" role="listitem">AWS</span>
+              <span class="tech-pill" role="listitem">Kubernetes</span>
+              <span class="tech-pill" role="listitem">Figma</span>
+              <span class="tech-pill" role="listitem">GraphQL</span>
+              <span class="tech-pill" role="listitem">Terraform</span>
+              <span class="tech-pill" role="listitem">Vercel</span>
+            </div>
+            <div class="marquee__group" aria-hidden="true">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Next.js</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">Kubernetes</span>
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">GraphQL</span>
+              <span class="tech-pill">Terraform</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+          </div>
+        </div>
+        <div class="marquee marquee--tech marquee--reverse mt-lg" aria-hidden="true">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Prisma</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">Swift</span>
+              <span class="tech-pill">Kotlin</span>
+              <span class="tech-pill">Flutter</span>
+              <span class="tech-pill">Stripe</span>
+              <span class="tech-pill">Supabase</span>
+            </div>
+            <div class="marquee__group">
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Prisma</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">Swift</span>
+              <span class="tech-pill">Kotlin</span>
+              <span class="tech-pill">Flutter</span>
+              <span class="tech-pill">Stripe</span>
+              <span class="tech-pill">Supabase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container reveal">
+        <div class="cta-banner">
+          <h2 id="cta-title" class="cta-banner__title">Ready to build something that lasts?</h2>
+          <p class="cta-banner__text">Book a 30-minute discovery call. We'll explore your goals, timeline, and how Booklee can accelerate your roadmap.</p>
+          <a href="book-call.html" class="btn btn--primary btn--lg">Book a Call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Booklee Technologies home">
+            <img src="assets/images/booklee-logo.png" alt="Booklee Technologies" class="footer__logo-img" width="560" height="560" decoding="async">
+          </a>
+          <p>We engineer digital products that scale—combining product thinking, technical excellence, and growth strategy for ambitious teams.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/booklee-technologies/" class="footer__social-link" data-site-linkedin target="_blank" rel="noopener noreferrer" aria-label="Booklee Technologies on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/booklee_technologies/" class="footer__social-link" data-site-instagram target="_blank" rel="noopener noreferrer" aria-label="Booklee Technologies on Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="book-call.html" class="footer__link">Book a Call</a>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <a href="services/product-engineering.html" class="footer__link">Product Engineering</a>
+          <a href="services/system-architecture.html" class="footer__link">System Architecture</a>
+          <a href="services/web-engineering.html" class="footer__link">Web Engineering</a>
+          <a href="services/ui-ux-systems.html" class="footer__link">UI/UX Systems</a>
+          <a href="services/digital-growth-strategy.html" class="footer__link">Digital Growth Strategy</a>
+          <a href="services/product-strategy-consulting.html" class="footer__link">Product Strategy & Consulting</a>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <a href="mailto:bookleetechnologies@gmail.com" class="footer__link" data-site-email="text">bookleetechnologies@gmail.com</a>
+          <a href="contact.html" class="footer__link">Contact Form</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Booklee Technologies. All rights reserved.</p>
+        <p>Engineering digital products that scale.</p>
+      </div>
+    </div>
+    <div class="footer__signature" id="footer-signature">
+      <div class="footer__signature-glow" id="footer-booklee-glow" aria-hidden="true"></div>
+      <div class="footer__signature-glass" aria-hidden="true"></div>
+      <span class="footer__booklee reveal-stagger" role="img" aria-label="Booklee">
+        <span class="footer__booklee-char" tabindex="0">B</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">k</span>
+        <span class="footer__booklee-char" tabindex="0">l</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+      </span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>

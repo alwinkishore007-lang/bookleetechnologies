@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Booklee Technologies — send a project inquiry, book a discovery call, or connect via email and social channels.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Contact | Booklee Technologies</title>
+  <link rel="icon" href="assets/images/booklee-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="page-loader" class="page-loader" role="status" aria-label="Loading"><img src="assets/images/booklee-logo.png" alt="" class="page-loader__logo-img" width="640" height="640" decoding="async"><div class="page-loader__bar"><div class="page-loader__progress"></div></div></div>
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+  <div id="mouse-gradient" class="mouse-gradient" aria-hidden="true"></div>
+  <div class="bg-canvas" aria-hidden="true"><div id="bg-particles" class="bg-particles"></div></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__logo" aria-label="Booklee Technologies home"><img src="assets/images/booklee-logo.png" alt="Booklee Technologies" class="nav__logo-img" width="560" height="560" decoding="async"></a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions"><a href="book-call.html" class="btn btn--primary btn--sm">Book a Call</a></div>
+        <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
+      </nav>
+    </div>
+  </header>
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="services.html" class="mobile-menu__link">Services</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="book-call.html" class="btn btn--primary">Book a Call</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">/</span><span aria-current="page">Contact</span></nav>
+        <h1 class="page-hero__title reveal">Let's start a <span class="text-gradient">conversation</span></h1>
+        <p class="page-hero__desc reveal">Share your project vision, book a discovery call, or reach us directly—we typically respond within one business day.</p>
+      </div>
+    </section>
+
+    <section class="section section--contact-page">
+      <div class="container contact-layout">
+        <div class="contact-form-wrap reveal reveal--left">
+          <h2 class="section__title">Send a message</h2>
+          <p class="text-muted mb-xl">Tell us about your goals, timeline, and team. The more context you share, the better we can prepare for our first conversation.</p>
+          <div id="form-success" class="form-success" role="alert" tabindex="-1">
+            Thank you! Your message has been sent to our team. We'll be in touch shortly.
+          </div>
+          <div id="form-send-error" class="form-send-error" role="alert" tabindex="-1"></div>
+          <form id="contact-form" action="https://formsubmit.co/bookleetechnologies@gmail.com" method="POST" novalidate>
+            <input type="text" name="_honey" id="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="hidden" name="_subject" value="New contact inquiry — Booklee Technologies website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-group">
+              <label class="form-label" for="name">Full name *</label>
+              <input class="form-input" type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Smith">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email *</label>
+              <input class="form-input" type="email" id="email" name="email" required autocomplete="email" placeholder="jane@company.com">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">Company</label>
+              <input class="form-input" type="text" id="company" name="company" autocomplete="organization" placeholder="Your company name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="details">Project details *</label>
+              <textarea class="form-textarea" id="details" name="details" required placeholder="What are you building? What's your timeline and budget range?"></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+        </div>
+        <aside class="contact-aside reveal reveal--right">
+          <article class="contact-card contact-card--call">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="contact-card__title">Book a Call</h3>
+            <p class="contact-card__text">Prefer to talk live? Schedule a 30-minute discovery call with our senior team.</p>
+            <a href="book-call.html" class="btn btn--primary">Schedule on Calendly</a>
+            <span class="contact-card__badge">Slots available daily</span>
+          </article>
+
+          <article class="contact-card contact-card--email">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3 class="contact-card__title">Business email</h3>
+            <p class="contact-card__text">For partnerships, press, and general inquiries—we reply within one business day.</p>
+            <a href="mailto:bookleetechnologies@gmail.com" class="contact-card__cta" data-site-email="text">bookleetechnologies@gmail.com</a>
+            <span class="contact-card__badge">Replies within 24 hours</span>
+          </article>
+
+          <article class="contact-card contact-card--social">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="contact-card__title">Follow us</h3>
+            <p class="contact-card__text">Product insights, launches, and behind-the-scenes from the Booklee team.</p>
+            <div class="contact-card__social">
+              <a href="https://www.linkedin.com/company/booklee--technologies/" class="contact-card__social-link" data-site-linkedin target="_blank" rel="noopener noreferrer" aria-label="Booklee Technologies on LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://www.instagram.com/booklee_technologies/" class="contact-card__social-link" data-site-instagram target="_blank" rel="noopener noreferrer" aria-label="Booklee Technologies on Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                Instagram
+              </a>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:none;padding-top:0">
+        <p>&copy; <span id="year"></span> Booklee Technologies.</p>
+        <p><a href="index.html">Back to home</a></p>
+      </div>
+    </div>
+    <div class="footer__signature" id="footer-signature">
+      <div class="footer__signature-glow" id="footer-booklee-glow" aria-hidden="true"></div>
+      <div class="footer__signature-glass" aria-hidden="true"></div>
+      <span class="footer__booklee reveal-stagger" role="img" aria-label="Booklee">
+        <span class="footer__booklee-char" tabindex="0">B</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">k</span>
+        <span class="footer__booklee-char" tabindex="0">l</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>

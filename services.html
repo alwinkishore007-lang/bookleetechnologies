@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Booklee Technologies services — product engineering, system architecture, web engineering, UI/UX systems, digital growth, and product strategy.">
+  <meta name="theme-color" content="#050816">
+  <title>Services | Booklee Technologies</title>
+  <link rel="icon" href="assets/images/booklee-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="page-loader" class="page-loader" role="status" aria-label="Loading"><img src="assets/images/booklee-logo.png" alt="" class="page-loader__logo-img" width="640" height="640" decoding="async"><div class="page-loader__bar"><div class="page-loader__progress"></div></div></div>
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+  <div id="mouse-gradient" class="mouse-gradient" aria-hidden="true"></div>
+  <div class="bg-canvas" aria-hidden="true"><div id="bg-particles" class="bg-particles"></div></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__logo" aria-label="Booklee Technologies home"><img src="assets/images/booklee-logo.png" alt="Booklee Technologies" class="nav__logo-img" width="560" height="560" decoding="async"></a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions"><a href="book-call.html" class="btn btn--primary btn--sm">Book a Call</a></div>
+        <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
+      </nav>
+    </div>
+  </header>
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="services.html" class="mobile-menu__link">Services</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="book-call.html" class="btn btn--primary">Book a Call</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">/</span><span aria-current="page">Services</span></nav>
+        <h1 class="page-hero__title reveal">Services built for <span class="text-gradient">scale and speed</span></h1>
+        <p class="page-hero__desc reveal">Six integrated disciplines—each led by senior practitioners and designed to work together across your product lifecycle.</p>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services-list" aria-label="All services">
+      <div class="container">
+        <div class="services-assemble" id="services-assemble">
+          <article id="product-engineering" class="service-card service-card--from-left" data-service="product-engineering">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">01</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h2 class="service-card__title"><a href="services/product-engineering.html">Product Engineering</a></h2>
+            <p class="service-card__desc">Full-stack development with maintainable codebases, CI/CD, and observability built in from day one.</p>
+            <a href="services/product-engineering.html" class="service-card__cta">Explore Engineering</a>
+            <div class="service-card__footer"><span class="service-card__badge">Senior-led sprints</span> <a href="services/product-engineering.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article id="system-architecture" class="service-card service-card--from-top" data-service="system-architecture">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">02</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <h2 class="service-card__title"><a href="services/system-architecture.html">System Architecture</a></h2>
+            <p class="service-card__desc">Resilient, cloud-native architectures designed for performance, security, and horizontal scale.</p>
+            <a href="services/system-architecture.html" class="service-card__cta">View Architecture</a>
+            <div class="service-card__footer"><span class="service-card__badge">Cloud-native focus</span> <a href="services/system-architecture.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article id="web-engineering" class="service-card service-card--from-right" data-service="web-engineering">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">03</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h2 class="service-card__title"><a href="services/web-engineering.html">Web Engineering</a></h2>
+            <p class="service-card__desc">High-performance web apps with accessibility, SEO, and conversion optimization at the core.</p>
+            <a href="services/web-engineering.html" class="service-card__cta">See Web Solutions</a>
+            <div class="service-card__footer"><span class="service-card__badge">Core Web Vitals ready</span> <a href="services/web-engineering.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article id="ui-ux-systems" class="service-card service-card--from-bottom" data-service="ui-ux-systems">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">04</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+            </div>
+            <h2 class="service-card__title"><a href="services/ui-ux-systems.html">UI/UX Systems</a></h2>
+            <p class="service-card__desc">Design systems and interaction patterns that keep experiences consistent across every touchpoint.</p>
+            <a href="services/ui-ux-systems.html" class="service-card__cta">Browse Design Systems</a>
+            <div class="service-card__footer"><span class="service-card__badge">Figma-to-code handoff</span> <a href="services/ui-ux-systems.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article id="digital-growth" class="service-card service-card--from-left" data-service="digital-growth-strategy">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">05</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+            </div>
+            <h2 class="service-card__title"><a href="services/digital-growth-strategy.html">Digital Growth Strategy</a></h2>
+            <p class="service-card__desc">Data-informed funnels, experimentation, and analytics that tie product work to revenue.</p>
+            <a href="services/digital-growth-strategy.html" class="service-card__cta">Growth Programs</a>
+            <div class="service-card__footer"><span class="service-card__badge">Experiment-driven</span> <a href="services/digital-growth-strategy.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+          <article id="product-strategy" class="service-card service-card--from-right" data-service="product-strategy-consulting">
+            <div class="service-card__orb" aria-hidden="true"></div>
+            <div class="service-card__shine" aria-hidden="true"></div>            <div class="service-card__accent" aria-hidden="true"></div>
+            <span class="service-card__number" aria-hidden="true">06</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h2 class="service-card__title"><a href="services/product-strategy-consulting.html">Product Strategy & Consulting</a></h2>
+            <p class="service-card__desc">Roadmaps, discovery workshops, and technical due diligence to de-risk your next big bet.</p>
+            <a href="services/product-strategy-consulting.html" class="service-card__cta">Strategy Workshops</a>
+            <div class="service-card__footer"><span class="service-card__badge">Executive advisory</span> <a href="services/product-strategy-consulting.html" class="service-card__continue">View page <span aria-hidden="true">›</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container reveal">
+        <div class="cta-banner cta-banner--featured">
+          <div class="cta-banner__glow" aria-hidden="true"></div>
+          <div class="cta-banner__inner">
+            <span class="cta-banner__eyebrow">Free discovery session</span>
+            <h2 class="cta-banner__title">Not sure which service fits?</h2>
+            <p class="cta-banner__text">Tell us where you are in your product journey—we'll recommend the right mix of engineering, design, and strategy for your goals and timeline.</p>
+            <div class="cta-banner__actions">
+              <a href="book-call.html" class="btn btn--primary btn--lg">Book a Call</a>
+              <a href="contact.html" class="btn btn--ghost btn--lg">Send a Message</a>
+            </div>
+            <ul class="cta-banner__perks" aria-label="What you get">
+              <li><span class="cta-banner__perk-icon" aria-hidden="true">âœ“</span> 30-minute strategy call</li>
+              <li><span class="cta-banner__perk-icon" aria-hidden="true">âœ“</span> No obligation</li>
+              <li><span class="cta-banner__perk-icon" aria-hidden="true">âœ“</span> Senior-led conversation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <a href="services/product-engineering.html" class="footer__link">Product Engineering</a>
+          <a href="services/system-architecture.html" class="footer__link">System Architecture</a>
+          <a href="services/web-engineering.html" class="footer__link">Web Engineering</a>
+          <a href="services/ui-ux-systems.html" class="footer__link">UI/UX Systems</a>
+          <a href="services/digital-growth-strategy.html" class="footer__link">Digital Growth Strategy</a>
+          <a href="services/product-strategy-consulting.html" class="footer__link">Product Strategy & Consulting</a>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+          <a href="book-call.html" class="footer__link">Book a Call</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Booklee Technologies. All rights reserved.</p>
+        <p><a href="index.html">Back to home</a></p>
+      </div>
+    </div>
+    <div class="footer__signature" id="footer-signature">
+      <div class="footer__signature-glow" id="footer-booklee-glow" aria-hidden="true"></div>
+      <div class="footer__signature-glass" aria-hidden="true"></div>
+      <span class="footer__booklee reveal-stagger" role="img" aria-label="Booklee">
+        <span class="footer__booklee-char" tabindex="0">B</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">o</span>
+        <span class="footer__booklee-char" tabindex="0">k</span>
+        <span class="footer__booklee-char" tabindex="0">l</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+        <span class="footer__booklee-char" tabindex="0">e</span>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
